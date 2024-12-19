@@ -58,14 +58,7 @@ StringBuilder  addressBuilder = new StringBuilder();
 
     }
 
-    private String extractAddress(String inputLine) {
-        return inputLine.replaceAll("[^a-zA-Z0-9, ]", "").trim();
-    }
-
-    private String extractName(String inputLine) {
-        return inputLine.replaceAll("[^a-zA-Z ]", "").trim();
-
-    }
+  
 
     private String loadAdharPdf(InputStream inputStream, String pan) throws Exception {
         String pdfdata = "";
